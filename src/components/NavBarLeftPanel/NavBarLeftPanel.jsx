@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "../NavBar/NavBar.css"
 
-function NavBarLeftPanel() {
+function NavBarLeftPanel({ active, setActive }) {
   //Использование хука useState, где hideLine переменная, которую надо менять функцией setHideLine
   const [hideLine, setHideLine] = useState("")
 
@@ -18,7 +18,12 @@ function NavBarLeftPanel() {
 
   return (
     <div className="navmenu__left__panel">
-      <div className="navmenu__burger" onClick={hide}>
+      <div
+        className="navmenu__burger"
+        onClick={() => {
+          setActive(!active)
+        }}
+      >
         <div
           className="navmenu__burger__line navmenu__burger__line__first"
           style={style}
