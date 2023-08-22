@@ -67,6 +67,16 @@
   transform: rotate(45deg);
 }
 
+.profileDropDown::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  height: 24px;
+  width: 36px;
+  background-color: black;
+}
+
 .active {
   transform: translateX(0);
 }/*# sourceMappingURL=ProfileDropDown.css.map */
