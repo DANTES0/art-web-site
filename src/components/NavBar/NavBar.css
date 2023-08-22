@@ -6,11 +6,15 @@
   align-items: center;
   justify-content: left;
   border-bottom: 1px solid greenyellow;
+  position: fixed;
+  z-index: 50;
 }
 .navmenu .navmenu__right__panel {
   background-color: transparent;
   margin: 0 auto;
   margin-right: 10px;
+  display: flex;
+  flex-direction: row;
 }
 .navmenu .navmenu__right__panel .navmenu__btn {
   width: 50px;
@@ -34,6 +38,18 @@
   font-size: 16px;
   padding-left: 5px;
   outline: none;
+}
+.navmenu .navmenu__right__panel .profile {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #adff2f;
+  border-radius: 17px;
+  background-image: url("../../utils/images/UserFill.svg");
+  background-color: transparent;
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  cursor: pointer;
 }
 .navmenu .navmenu__left__panel {
   height: 30px;

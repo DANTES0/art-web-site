@@ -1,32 +1,33 @@
 .menu {
   position: fixed;
-  width: 100vw;
+  width: 300px;
   height: 100vh;
   top: 51px;
   left: 0;
-  transform: translateX(-130%);
+  transform: translateX(-115%);
   transition: all 0.2s;
-  .blur {
-    left: 30%;
-    width: 100vw;
-    height: 100vh;
-    backdrop-filter: blur(2px);
-    position: absolute;
-  }
+  background-color: black;
+  // .blur {
+  //   left: 15%;
+  //   width: 100vw;
+  //   height: 100vh;
+  //   backdrop-filter: blur(2px);
+  //   position: absolute;
+  // }
   .menu__content {
-    width: 30%;
+    width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
   .menu__header {
     width: 100%;
     padding: 10px;
     font-size: 26px;
-    color: greenyellow;
-    border-bottom: solid 1px greenyellow;
+    color: #adff2f;
+    // border-bottom: solid 1px greenyellow;
     text-align: center;
   }
   ul li a {
@@ -34,16 +35,17 @@
     text-decoration: none;
     font-size: 18px;
     margin: 10px 0;
+    margin-left: 20px;
   }
   ul {
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: start;
     flex-direction: column;
   }
   ul li {
     display: flex;
-    align-items: center;
+    align-items: start;
   }
 }
 .active {

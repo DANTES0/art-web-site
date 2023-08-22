@@ -2,14 +2,17 @@ import { useState } from "react"
 import Menu from "../Menu/Menu"
 import NavBarLeftPanel from "../NavBarLeftPanel/NavBarLeftPanel"
 import "./NavBar.css"
+import NavBarRightPanel from "../NavBarRightPanel/NavBarRightPanel"
+import ProfileDropDown from "../ProfileDropDown/ProfileDropDown"
 
 function NavBar() {
   //создаём состояние у родителя для дочернего компонента
   const [menuActive, setMenuActive] = useState(false)
+  const [profileActive, setProfileActive] = useState(false)
   const items = [
     { value: "Главная", href: "/main", icon: "title" },
     { value: "Профиль", href: "/profile", icon: "title" },
-    { value: "Галлерея", href: "/gallery", icon: "title" },
+    { value: "Галерея", href: "/gallery", icon: "title" },
   ]
   return (
     <div className="navmenu">
@@ -18,13 +21,17 @@ function NavBar() {
       <Menu
         active={menuActive}
         setActive={setMenuActive}
-        header={"Бургер меню"}
+        header={"Меню"}
         items={items}
       />
-      <div className="navmenu__right__panel">
-        <button className="navmenu__btn">+</button>
-        <input type="text" className="navmenu__search" placeholder="Поиск..." />
-      </div>
+      <NavBarRightPanel
+        activeProfile={profileActive}
+        setActiveProfile={setProfileActive}
+      />
+      <ProfileDropDown
+        activeProfile={profileActive}
+        setActiveProfile={setProfileActive}
+      />
     </div>
   )
 }
