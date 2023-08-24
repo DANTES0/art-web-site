@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
   .MainPageArts__Image {
     width: 100%;
     height: 100%;
@@ -19,5 +21,28 @@
   }
   .MainPageArts__tags {
     height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    .MainPageArts__tags__first {
+      height: 20px;
+      width: 46px;
+      background-color: transparent;
+      border: 1px solid greenyellow;
+      margin: 0 5px;
+      border-radius: 10px;
+      color: white;
+      font-size: 12px;
+      padding: 0 4px;
+      font-weight: 700;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
+}
+.MainPageArts:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
 }

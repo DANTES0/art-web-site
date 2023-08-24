@@ -14,6 +14,11 @@ function App() {
           <MainPageArts />
           <MainPageArts />
           <MainPageArts />
+          <MainPageArts />
+          <MainPageArts />
+          <MainPageArts />
+          <MainPageArts />
+          <MainPageArts />
         </div>
       </div>
     </div>
