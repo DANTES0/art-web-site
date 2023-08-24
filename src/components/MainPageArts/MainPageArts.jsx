@@ -1,10 +1,11 @@
 import React from "react"
 import "./MainPageArts.css"
 import MainPageArtsTags from "../MainPageArtsTags/MainPageArtsTags"
-const MainPageArts = () => {
+const MainPageArts = (props) => {
+  const img = require(`../../utils/images/${props.artDescription.picture}`)
   return (
     <div className="MainPageArts">
-      <div className="MainPageArts__Image"></div>
+      <img className="MainPageArts__Image" src={img} />
       <div className="MainPageArts__tags">
         <MainPageArtsTags />
         <MainPageArtsTags />

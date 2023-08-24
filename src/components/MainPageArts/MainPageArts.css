@@ -15,10 +15,10 @@
   height: 100%;
   border-bottom: 1px solid greenyellow;
   background-color: transparent;
-  background-image: url("../../utils/images/secondArt.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .MainPageArts .MainPageArts__tags {
   height: 20%;

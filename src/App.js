@@ -9,16 +9,41 @@ function App() {
       <div className="container">
         <SearchImage />
         <div className="container__MainPageArts">
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
-          <MainPageArts />
+          <MainPageArts
+            artDescription={{
+              id: 1,
+              title: "Хина Амано",
+              picture: "firstArt.jpg",
+            }}
+          />
+          <MainPageArts
+            artDescription={{
+              id: 2,
+              title: "Хина Амано",
+              picture: "secondArt.jpg",
+            }}
+          />
+          <MainPageArts
+            artDescription={{
+              id: 3,
+              title: "Хина Амано",
+              picture: "thirdArt.png",
+            }}
+          />
+          <MainPageArts
+            artDescription={{
+              id: 4,
+              title: "Хина Амано",
+              picture: "fourthArt.jpg",
+            }}
+          />
+          <MainPageArts
+            artDescription={{
+              id: 5,
+              title: "Хина Амано",
+              picture: "fifthArt.jpg",
+            }}
+          />
         </div>
       </div>
     </div>
