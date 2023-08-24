@@ -1,10 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import MainPageArts from "../MainPageArts/MainPageArts"
-const MainPageArtsList = ({ arts }) => {
+const MainPageArtsList = ({ arts, active, isActive }) => {
   return (
     <div className="container__MainPageArts">
       {arts.map((art) => (
-        <MainPageArts artDescription={art} key={art.id} />
+        <MainPageArts
+          active={active}
+          isActive={isActive}
+          artDescription={art}
+          key={art.id}
+        />
       ))}
     </div>
   )
