@@ -1,0 +1,18 @@
+.SearchImage {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SearchImage .Search {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid greenyellow;
+  outline: none;
+  color: white;
+  border-radius: 20px;
+  padding-left: 30px;
+  font-size: 20px;
+}/*# sourceMappingURL=SearchImage.css.map */

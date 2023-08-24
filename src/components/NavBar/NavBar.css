@@ -6,8 +6,6 @@
   align-items: center;
   justify-content: left;
   border-bottom: 1px solid greenyellow;
-  position: fixed;
-  z-index: 50;
 }
 .navmenu .navmenu__right__panel {
   background-color: transparent;
