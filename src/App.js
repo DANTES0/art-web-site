@@ -16,14 +16,12 @@ function App() {
     { id: 7, title: "You lie in april", picture: "sevenArt.jpg" },
     { id: 8, title: "Horomiya", picture: "eightArt.jpg" },
   ])
-  const [open, setOpen] = useState(false)
   return (
     <div className="App">
       <NavBar />
       <div className="container">
         <SearchImage />
-        <MainPageArtsList active={open} isActive={setOpen} arts={arts} />
-        <DescriptionArts active={open} isActive={setOpen} />
+        <MainPageArtsList arts={arts} />
       </div>
     </div>
   )

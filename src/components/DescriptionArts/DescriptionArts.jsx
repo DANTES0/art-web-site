@@ -1,19 +1,19 @@
 import React from "react"
 import "../DescriptionArts/DescriptionArts.css"
-const DescriptionArts = ({ active, isActive }) => {
+const DescriptionArts = ({ active, isActive, art }) => {
   return (
     <div
-      className={active ? "descriptionArts active" : "descriptionArts"}
+      className={active ? "descriptionArts activeDesc" : "descriptionArts"}
       onClick={() => isActive(!active)}
     >
       <div
         className="descriptionArts__content"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="title">Название</div>
+        <div className="title">{art.title}</div>
         <div className="author">DANTES</div>
         <img
-          src={require("../../utils/images/firstArt.jpg")}
+          src={require(`../../utils/images/${art.picture}`)}
           alt=""
           className="image"
         />

@@ -43,7 +43,7 @@
   text-overflow: ellipsis;
 }
 
-.MainPageArts:hover {
+.MainPageArts_none:hover {
   transform: scale(1.1);
   transition: all 0.2s;
 }/*# sourceMappingURL=MainPageArts.css.map */

@@ -1,13 +1,11 @@
 .descriptionArts {
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
   display: none;
+  left: 0;
+  top: 0;
   align-items: center;
 }
 .descriptionArts .descriptionArts__content {
@@ -79,6 +77,6 @@
   margin: 4px 10px;
 }
 
-.active {
+.activeDesc {
   display: flex;
 }/*# sourceMappingURL=DescriptionArts.css.map */
