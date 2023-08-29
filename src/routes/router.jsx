@@ -2,6 +2,7 @@ import React from "react"
 import { createBrowserRouter } from "react-router-dom"
 import NavBar from "../components/NavBar/NavBar"
 import Main from "../pages/Main"
+import Registration from "../pages/Registration"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
       {
         path: "main",
         element: <Main />,
+      },
+      {
+        path: "registration",
+        element: <Registration />,
       },
     ],
   },

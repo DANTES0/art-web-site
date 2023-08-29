@@ -1,0 +1,48 @@
+.registration__container {
+  margin: 0 auto;
+  width: 50vw;
+  height: 800px;
+  .registration__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid greenyellow;
+    margin-top: 80px;
+  }
+  .text {
+    color: white;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  .reg_text {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-top: 10px;
+  }
+  .enter {
+    background-color: transparent;
+    border: 1px solid greenyellow;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    width: 130px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+}
+input {
+  width: 50%;
+  height: 30px;
+  outline: none;
+  border: 1px solid greenyellow;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
