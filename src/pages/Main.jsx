@@ -12,6 +12,8 @@ const Main = () => {
     { id: 6, title: "You lie in april", picture: "sixArt.jpg" },
     { id: 7, title: "You lie in april", picture: "sevenArt.jpg" },
     { id: 8, title: "Horomiya", picture: "eightArt.jpg" },
+    { id: 9, title: "night", picture: "nineArt.jpg" },
+    { id: 10, title: "lake", picture: "tenArt.jpg" },
   ])
   return (
     <div className="container">
