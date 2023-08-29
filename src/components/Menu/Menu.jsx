@@ -1,5 +1,6 @@
 import React from "react"
 import "../Menu/Menu.css"
+import { Link } from "react-router-dom"
 const Menu = ({ header, items, active, setActive }) => {
   return (
     <div
@@ -12,7 +13,7 @@ const Menu = ({ header, items, active, setActive }) => {
         <ul>
           {items.map((item) => (
             <li>
-              <a href={item.href}>{item.value}</a>
+              <Link to={item.href}>{item.value}</Link>
               <span className="material-icons">{item.icon}</span>
             </li>
           ))}
