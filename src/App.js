@@ -19,6 +19,11 @@ function App() {
         },
       ],
     },
+    //Чтобы навбара небыло можно делать не в дочерние
+    {
+      path: "/test",
+      element: <Main />,
+    },
   ])
   return (
     <div className="App">
