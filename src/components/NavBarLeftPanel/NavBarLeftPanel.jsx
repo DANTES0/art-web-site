@@ -1,5 +1,6 @@
 import { useState } from "react"
 import "../NavBar/NavBar.css"
+import { Link } from "react-router-dom"
 
 function NavBarLeftPanel({ active, setActive }) {
   //Использование хука useState, где hideLine переменная, которую надо менять функцией setHideLine
@@ -32,9 +33,12 @@ function NavBarLeftPanel({ active, setActive }) {
         <div className="navmenu__burger__line"></div>
         <div className="navmenu__burger__line" style={style}></div>
       </div>
+
       <div className="navmenu__title">
-        <div className="navmenu__title__icon"></div>
-        <div className="navmenu__title__name">ArtnIdustries</div>
+        <Link className="link" to={"main"}>
+          <div className="navmenu__title__icon"></div>
+          <div className="navmenu__title__name">ArtnIdustries</div>
+        </Link>
       </div>
     </div>
   )

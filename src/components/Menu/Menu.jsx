@@ -13,7 +13,9 @@ const Menu = ({ header, items, active, setActive }) => {
         <ul>
           {items.map((item) => (
             <li>
-              <Link to={item.href}>{item.value}</Link>
+              <Link to={item.href} onClick={() => setActive(false)}>
+                {item.value}
+              </Link>
               <span className="material-icons">{item.icon}</span>
             </li>
           ))}

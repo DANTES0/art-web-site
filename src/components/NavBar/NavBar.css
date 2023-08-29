@@ -87,6 +87,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
 }
 .navmenu .navmenu__left__panel .navmenu__title .navmenu__title__icon {
   width: 30px;
@@ -100,4 +101,14 @@
   color: greenyellow;
   font-size: 18px;
   font-weight: 700;
+  text-decoration: none;
+}
+
+.link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 100%;
 }/*# sourceMappingURL=NavBar.css.map */
